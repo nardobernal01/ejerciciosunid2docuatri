@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Restaurante</title>
+    <link rel="stylesheet" href="assets/css/styles.css" />
+  </head>
+  <body>
+    <header>
+      <h1>La Vicenta-Vamos Alv</h1>
+    </header>
+    <div class="container">
+      <div>
+        <h2>Menú</h2>
+        <h3>Entrada </h3>
+        <div class="menu-item">
+
+          <span>Empanadas (2 pzas) - $120</span>
+          <br> A elegir: </br>
+          <br> Queso Oaxaca con Epazote </br>
+          <br> Carne de res </br>
+          <br> Acompañadas de chimichurri </br>
+
+          <button onclick="addToCart('Empanadas', 120)">Agregar</button>
+        </div>
+        <div class="menu-item">
+          <span>Hamburguesa con queso - $100</span>
+          <button onclick="addToCart('Hamburguesa con queso', 100)">
+            Agregar
+          </button>
+        </div>
+        <div class="menu-item">
+          <span>Nachos la Vicenta - $80</span>
+          <button onclick="addToCart('Nachos la vicenta', 80)">Agregar</button>
+        </div>
+      </div>
+      <div class="menu-item">
+        <span>Boneles 300g- $230 </span>
+        <button onclick="addToCart('Boneles', 230)">Agregar</button>
+      </div>
+      <div class="menu-item">
+        <span>Cebochenta - $70</span>
+        <button onclick="addToCart('Cebochenta', 70)">Agregar</button>
+      </div>
+      <div class="menu-item">
+        <span> Brocolo al Grill - $130</span>
+        <button onclick="addToCart('Bocolo al Grill', 130 )">Agregar</button>
+      </div>
+  
+    <div class="menu-item">
+      <span>Queso cilantro  - $140 </span>
+      <button onclick="addToCart('Queso Cilantro', 140)">Agregar</button>
+    </div>
+
+    <div class="menu-item">
+      <span>Ensalada Cesar  - $100 </span>
+      <button onclick="addToCart('Ensalada César', 100)">Agregar</button>
+    </div>
+    
+  </div>
+
+      <div class="cart">
+        <h3>Carrito de Compras</h3>
+        <ul id="cart-items"></ul>
+        <strong>Total: $<span id="total">0</span></strong>
+      </div>
+      <div class="order-details" id="order-details" style="display: none">
+        <!-- Sección de detalles de pedido -->
+        <h3>Detalles del Pedido</h3>
+        <p id="order-name"></p>
+        <p id="order-address"></p>
+        <ul id="order-summary"></ul>
+        <strong>Total: $<span id="order-total"></span></strong>
+      </div>
+      <div class="form-container">
+        <h2>Información de Pedido</h2>
+        <input
+          type="text"
+          id="customer-name"
+          placeholder="Nombre Completo"
+          required
+        />
+        <input
+          type="text"
+          id="customer-address"
+          placeholder="Dirección"
+          required
+        />
+        <button onclick="submitOrder()">Enviar Pedido</button>
+      </div>
+    </div>
+    
+    <script src="assets/js/main.js"></script>
+  </body>
+</html>
