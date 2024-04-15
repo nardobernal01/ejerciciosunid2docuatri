@@ -1,0 +1,33 @@
+.contenedor-imagen {
+    width: 700px; /* Ancho deseado del contenedor */
+    margin: 0 auto; /* Esto centra el contenedor horizontalmente */
+}
+
+
+.contenedor-imagen img {
+    display: block; /* Elimina el espacio adicional que puede aparecer debajo de la imagen */
+    width: 100%; /* Hace que la imagen ocupe todo el ancho del contenedor */
+    height: auto; /* Mantiene la proporción original de la imagen */
+}
+
+body {
+    font-family: Arial, sans-serif;
+    
+}
+
+/* Cambiar la tipografía para el título */
+h1 {
+    font-family: "Times New Roman", Times, serif;
+}
+
+/* Cambiar la tipografía para los párrafos */
+p {
+    font-family: Verdana, Geneva, sans-serif;
+}
+.containertxt{
+display: flex;
+width: 190px;
+height: 50;
+border: 1px solid red;
+justify-content: center;
+}
